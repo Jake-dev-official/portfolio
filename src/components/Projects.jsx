@@ -70,14 +70,7 @@ const cardVariants = {
 const Projects = () => {
   return (
     <section id="projects" className="py-20 relative overflow-hidden">
-      <motion.div 
-        className="absolute top-0 left-0 w-full h-full bg-primary z-20"
-        style={{ transformOrigin: 'top' }}
-        initial={{ scaleY: 1 }}
-        whileInView={{ scaleY: 0 }}
-        viewport={{ once: true, amount: 0.5 }}
-        transition={{ duration: 0.8, delay: 0.5, ease: [0.6, 0.01, -0.05, 0.9] }}
-      />
+
       <div className="container mx-auto text-center relative z-10">
         <h2 className="text-4xl font-bold mb-12">My Work</h2>
         <motion.div 

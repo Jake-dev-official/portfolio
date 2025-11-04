@@ -21,7 +21,7 @@ const Contact = () => {
             3. Replace the action URL below with your form's endpoint URL.
         */}
         <form 
-          action="https://formspree.io/f/[User to provide: Your Formspree ID]" 
+          action="https://formspree.io/f/mkgplakl" 
           method="POST"
           className="max-w-xl mx-auto"
         >
