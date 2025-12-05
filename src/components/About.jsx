@@ -1,8 +1,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FaHtml5, FaCss3Alt, FaReact, FaPhp, FaBootstrap } from 'react-icons/fa';
+import { FaHtml5, FaCss3Alt, FaReact, FaPhp, FaBootstrap, FaPython } from 'react-icons/fa';
 import { IoLogoJavascript } from 'react-icons/io5';
-import { SiTailwindcss, SiMui, SiMysql, SiMongodb } from 'react-icons/si';
+import { SiTailwindcss, SiMui, SiMysql, SiMongodb, SiPostgresql, SiPrisma } from 'react-icons/si';
 
 const frontendSkills = [
   { icon: <FaHtml5 />, name: 'HTML' },
@@ -15,9 +15,12 @@ const frontendSkills = [
 ];
 
 const backendSkills = [
+  { icon: <FaPython />, name: 'Python' },
   { icon: <FaPhp />, name: 'PHP' },
   { icon: <SiMysql />, name: 'MySQL' },
+  { icon: <SiPostgresql />, name: 'PostgreSQL' },
   { icon: <SiMongodb />, name: 'MongoDB' },
+  { icon: <SiPrisma />, name: 'Prisma' },
 ];
 
 const skillCategoryVariants = {

@@ -7,6 +7,8 @@ import nextgenImg from "../assets/nextgen.png";
 import skyglowImg from "../assets/skyglow.png";
 import logitransportImg from "../assets/logitransport.png";
 import retromanagerImg from "../assets/retromanager.png";
+import feedbackhub360Img from "../assets/feedbackhub360.png";
+import salesinventoryImg from "../assets/salesinventory.png";
 
 const projects = [
   {
@@ -42,13 +44,20 @@ const projects = [
     githubUrl: "#",
   },
   {
-    title: "Feedback Hub System",
+    title: "Feedback Hub 360",
     description:
-      "A centralized system for collecting, managing, and analyzing user feedback for various applications.",
-    imageUrl:
-      "https://via.placeholder.com/400x250/10B981/FFFFFF?text=Feedback+Hub",
+      "A comprehensive feedback management system built with React, FastAPI, and PostgreSQL with Prisma ORM for organizational feedback collection and analysis.",
+    imageUrl: feedbackhub360Img,
     liveUrl: "#",
-    githubUrl: "#",
+    githubUrl: "https://github.com/jake-dev-official/Feedback-Hub-360",
+  },
+  {
+    title: "Sales & Inventory Management",
+    description:
+      "An offline-capable inventory system built with Python and Tkinter. Features product management, sales processing with real-time stock validation, PDF invoice generation, and debt tracking.",
+    imageUrl: salesinventoryImg,
+    liveUrl: "#",
+    githubUrl: "https://github.com/jake-dev-official/sales-inventory",
   },
   {
     title: "JAKE Retro Download Manager",
@@ -103,22 +112,26 @@ const Projects = () => {
                 <h3 className="text-2xl font-bold mb-2">{project.title}</h3>
                 <p className="text-gray-400 mb-4">{project.description}</p>
                 <div className="flex justify-center space-x-4">
-                  <a
-                    href={project.liveUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-primary hover:underline flex items-center gap-2"
-                  >
-                    <FaExternalLinkAlt /> Live Demo
-                  </a>
-                  <a
-                    href={project.githubUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-primary hover:underline flex items-center gap-2"
-                  >
-                    <FaGithub /> GitHub
-                  </a>
+                  {project.liveUrl && project.liveUrl !== "#" && (
+                    <a
+                      href={project.liveUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-primary hover:underline flex items-center gap-2"
+                    >
+                      <FaExternalLinkAlt /> Live Demo
+                    </a>
+                  )}
+                  {project.githubUrl && project.githubUrl !== "#" && (
+                    <a
+                      href={project.githubUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-primary hover:underline flex items-center gap-2"
+                    >
+                      <FaGithub /> GitHub
+                    </a>
+                  )}
                 </div>
               </div>
             </motion.div>
